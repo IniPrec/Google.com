@@ -5,6 +5,7 @@
   --textcolor: white;
   --size1: 90px;
   --size2: 12px;
+  --size3: 14px;
   --weight: ;
   --transform: uppercase;
   --transform: lowercase;
@@ -12,6 +13,12 @@
 }
 body {
   background-color: var(--bgcolor);
+}
+body,
+input,
+button {
+  font-size: var(--size3);
+  font-family: var(--font2);
 }
 .top-container {
   display: var(--display);
@@ -52,12 +59,190 @@ body {
   height: 100%;
   margin-top: auto;
 }
-.search-box {
+.padd {
+  padding: 20px;
+}
+.mahgt2 {
+  max-height: 160px;
+}
+.flex {
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+.speech {
+  background: var(--bgcolor);
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  overflow: hidden;
+  position: fixed;
+  text-align: left;
+  top: 0;
+  visibility: hidden;
+  width: 100%;
+  z-index: 10000;
+  transition: visibility 0s linear 0.218s, background-color 0.218s;
+}
+.s2fp.spch {
+  opacity: 1;
+  transition-delay: 0s;
+  visibility: visible;
+}
+.close-button {
+  background: none;
+  border: none;
+  color: #9aa0a6;
+  cursor: pointer;
+  font-size: 26px;
+  right: 0;
+  line-height: 15px;
+  opacity: 0.6;
+  margin: -1px -1px 0 0;
+  padding: 0 0 2px 0;
+  height: 48px;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+}
+.close-button:hover {
+  opacity: 0.8;
+}
+.close-button:active {
+  opacity: 1;
+}
+.spchc {
+  display: block;
+  height: 42px;
+  pointer-events: none;
   margin: auto;
-  padding-top: 6px;
-  width: auto;
-  max-width: 584px;
   position: relative;
+  top: 0;
+  margin-top: 312px;
+  max-width: 572px;
+  min-width: 534px;
+  padding: 0 223px;
+}
+.inner-container {
+  height: 100%;
+  opacity: 0.1;
+  pointer-events: none;
+  width: 100%;
+  transition: opacity 0.318s ease-in;
+}
+.button-container {
+  pointer-events: none;
+  position: relative;
+  transition: transform 0.218s, opacity 0.218s ease-in;
+  transform: scale(0.1);
+  height: 165px;
+  width: 165px;
+  right: -70px;
+  top: -70px;
+  float: right;
+}
+.ftrs {
+  background-color: #dadce0;
+  border-radius: 100%;
+  display: inline-block;
+  opacity: 1;
+  pointer-events: none;
+  position: absolute;
+  transform: scale(0.01);
+  transition: opacity 0.218s;
+  height: 301px;
+  left: -69px;
+  top: -69px;
+  width: 301px;
+}
+.ftrs2 {
+  background-color: #fff;
+  border: 1px solid #f8f9fa;
+  border-radius: 100%;
+  bottom: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: inline-block;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  transition: background-color 0.218s, border 0.218s, box-shadow 0.218s;
+  transition-delay: 0;
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  top: 0;
+}
+.microphone {
+  height: 87px;
+  pointer-events: none;
+  position: absolute;
+  width: 42px;
+  top: 47px;
+  transform: scale(1);
+  left: 43px;
+}
+.receiver {
+  background-color: #999;
+  border-radius: 30px;
+  height: 46px;
+  left: 25px;
+  pointer-events: none;
+  position: absolute;
+  width: 24px;
+}
+dialog {
+  color: canvastext;
+}
+.text-container {
+  pointer-events: none;
+  position: absolute;
+}
+.spcht {
+  font-weight: normal;
+  line-height: 1.2;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  text-align: left;
+  -webkit-font-smoothing: antialiased;
+  transition: opacity 0.1s ease-in, margin-left 0.5s ease-in,
+    top 0s linear 0.218s;
+  left: -44px;
+  top: -0.2em;
+  margin-left: 44px;
+  font-size: 32px;
+  width: 460px;
+}
+.s2fp .spcht {
+  margin-left: 0;
+  opacity: 1;
+  transition: opacity 0.5s ease-out, margin-left 0.5s ease-out;
+}
+.spchta {
+  color: #8ab4f8;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  pointer-events: auto;
+  text-decoration: underline;
+}
+.spch-2l.spcht,
+.spch-3l.spcht,
+.spch-4l.spcht {
+  transition: top 0.218s ease-out;
+}
+.spch-2l.spcht {
+  top: -0.6em;
+}
+.spch-3l.spcht {
+  top: -1.3em;
+}
+.spch-4l.spcht {
+  top: -1.7em;
+}
+.s2fp .spch-5l.spcht {
+  top: -2.5em;
 }
 div {
   color: var(--textcolor);
