@@ -1,0 +1,48 @@
+:root {
+  --font1: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --font2: Arial, sans-serif;
+  --bgcolor: #202124;
+  --textcolor: white;
+  --size1: 12px;
+  --size2: 12px;
+  --weight: ;
+  --transform: uppercase;
+  --transform: lowercase;
+  --display: flex;
+}
+body {
+  background-color: var(--bgcolor);
+}
+.top-container {
+  display: var(--display);
+  background-color: var(--bgcolor);
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.top-container > div {
+  background-color: var(--bgcolor);
+  margin: 5px;
+  padding: 2px;
+  font-size: var(--size2);
+  width: 35px;
+  font-family: var(--font2);
+}
+.top-container2 {
+  display: var(--display);
+  background-color: var(--bgcolor);
+  align-items: center;
+  justify-content: center;
+  padding: 10px -10px 0px -10px;
+  margin: 10px -10px 0px -10px;
+}
+.top-container2 > div {
+  background-color: var(--bgcolor);
+  margin: 10px 5px 0px 5px;
+  padding: 0px;
+  font-size: 90px;
+  width: 292px;
+  font-family: var(--font2);
+}
+div {
+  color: var(--textcolor);
+}
