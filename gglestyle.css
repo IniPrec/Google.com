@@ -3,7 +3,7 @@
   --font2: Arial, sans-serif;
   --bgcolor: #202124;
   --textcolor: white;
-  --size1: 12px;
+  --size1: 90px;
   --size2: 12px;
   --weight: ;
   --transform: uppercase;
@@ -27,22 +27,39 @@ body {
   width: 35px;
   font-family: var(--font2);
 }
-.top-container2 {
-  display: var(--display);
-  background-color: var(--bgcolor);
+.mtc {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 10px -10px 0px -10px;
-  margin: 10px -10px 0px -10px;
 }
-.top-container2 > div {
-  background-color: var(--bgcolor);
-  margin: 10px 5px 0px 5px;
-  padding: 0px;
-  font-size: 90px;
-  width: 292px;
-  font-family: var(--font2);
+.mhgt {
+  min-height: 92px;
+}
+.hgt {
+  max-height: 290px;
+  height: calc(100% - 560px);
+}
+.msm {
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+.mahgt {
+  max-height: 92px;
+  position: relative;
+  font-size: var(--size1);
+}
+.msm2 {
+  height: 100%;
+  margin-top: auto;
+}
+.search-box {
+  margin: auto;
+  padding-top: 6px;
+  width: auto;
+  max-width: 584px;
+  position: relative;
 }
 div {
   color: var(--textcolor);
+  display: block;
 }
