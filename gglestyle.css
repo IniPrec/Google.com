@@ -324,6 +324,10 @@ textarea.txtarea,
   flex-direction: row;
   height: 44px;
 }
+.minidiv .micimg {
+  margin-top: 0;
+  height: 32px;
+}
 .micbox {
   padding-right: 4px;
   background: transparent;
@@ -351,6 +355,11 @@ textarea.txtarea,
   display: block;
   height: 100%;
   width: 100%;
+}
+.micbdr {
+  display: none;
+  border-left: 1px solid #5f6368;
+  height: 65%;
 }
 .micbox2 {
   background: transparent;
