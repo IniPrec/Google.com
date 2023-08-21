@@ -244,6 +244,78 @@ dialog {
 .s2fp .spch-5l.spcht {
   top: -2.5em;
 }
+form {
+  display: block;
+  margin: 0em;
+}
+.searchbox {
+  display: flex;
+  z-index: 3;
+  min-height: 44px;
+  background: #202124;
+  border: 1px solid #5f6368;
+  box-shadow: none;
+  border-radius: 24px;
+  margin: 0 auto;
+  width: 638px;
+  width: auto;
+  max-width: 584px;
+}
+.insearchbox {
+  flex: 1;
+  display: flex;
+  padding: 5px 8px 0 14px;
+}
+.flexsrchbox {
+  display: flex;
+  align-items: center;
+  padding-right: 13px;
+  margin-top: -5px;
+  height: 46px;
+}
+.mrgn {
+  margin-top: 3px;
+  color: #9aa0a6;
+}
+.disp {
+  display: inline-block;
+  fill: currentColor;
+  height: 20px;
+  line-height: 20px;
+  position: relative;
+  width: 20px;
+}
+.srchspce {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  margin-top: 6px;
+}
+.txtbox {
+  color: transparent;
+  white-space: pre;
+  position: absolute;
+  pointer-events: none;
+}
+textarea.txtarea,
+.txtbox {
+  font-family: arial, sans-serif;
+  line-height: 22px;
+  margin-bottom: 8px;
+  overflow-x: hidden;
+}
+.txtarea {
+  resize: none;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  color: #e8eaed;
+  word-wrap: break-word;
+  outline: none;
+  display: flex;
+  -webkit-tap-highlight-color: transparent;
+}
 div {
   color: var(--textcolor);
   display: block;
