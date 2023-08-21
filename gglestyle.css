@@ -316,6 +316,66 @@ textarea.txtarea,
   display: flex;
   -webkit-tap-highlight-color: transparent;
 }
+.micimg {
+  display: flex;
+  flex: 0 0 auto;
+  margin-top: -5px;
+  align-items: stretch;
+  flex-direction: row;
+  height: 44px;
+}
+.micbox {
+  padding-right: 4px;
+  background: transparent;
+  align-items: center;
+  flex: 1 0 auto;
+  flex-direction: row;
+  display: flex;
+  cursor: pointer;
+}
+.micbxftr {
+  height: 100%;
+  color: #9aa0a6;
+  vertical-align: middle;
+  outline: none;
+}
+.micbxftr2 {
+  display: inline-block;
+  fill: currentColor;
+  height: 24px;
+  line-height: 24px;
+  position: relative;
+  width: 24px;
+}
+.micbxftr2 svg {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.micbox2 {
+  background: transparent;
+  border: 0;
+  align-items: center;
+  flex: 1 0 auto;
+  cursor: pointer;
+  display: none;
+  height: 100%;
+  line-height: 44px;
+  outline: none;
+  padding: 0 12px;
+}
+.micspc {
+  flex: 1 0 auto;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  border: 0;
+  background: transparent;
+  outline: none;
+  padding: 0 8px;
+  width: 24px;
+  line-height: 44px;
+}
 div {
   color: var(--textcolor);
   display: block;
