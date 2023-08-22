@@ -358,13 +358,13 @@ button {
   box-shadow: none;
   border-radius: 24px;
   margin: 0 auto;
-  width: auto;
+  width: 638px;
   max-width: 584px;
 }
-.srch-txt-box {
+.srchtxt-box {
   flex: 1;
-  display: var(--display);
-  padding: 5px 8px 0px 14px;
+  display: flex;
+  padding: 5px 8px 0 14px;
 }
 .srchspc {
   display: var(--display);
@@ -386,4 +386,7 @@ button {
 div {
   color: var(--textcolor);
   display: block;
+}
+div {
+  outline: 1px solid #036cdb !important;
 }
