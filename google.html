@@ -11,144 +11,64 @@
     />
   </head>
   <body>
-    <div class="top-container">
-      <div>Gmail</div>
-      <div>Images</div>
-      <div><i class="material-icons">view_module</i></div>
-      <div><i class="material-icons">person</i></div>
-    </div>
-    <div class="msm hgt mhgt mtc">
-      <div class="msm2 mahgt">Google</div>
-    </div>
-    <div class="flex mahgt2 padd">
-      <dialog class="spch-diag" id="spch-diag">
-        <div class="speech" style="display: none" id="speech">
-          <button class="close-button" id="spchx" aria-label="close">x</button>
-          <div class="spchc" id="spchc">
-            <div class="inner-container">
-              <div class="button-container">
-                <span class="ftrs" id="spchl"></span>
-                <span class="ftrs2" id="spchb">
-                  <div class="microphone">
-                    <span class="receiver"></span>
-                    <div class="wrapper">
-                      <span class="stem"></span>
-                      <span class="shell"></span>
-                    </div>
-                  </div>
-                </span>
-              </div>
-              <div class="text-container">
-                <span class="spcht" style="color: #9aa0a6" id="spchi"> </span>
-                <span class="spcht" style="color: #bdc1c6" id="spchf"> </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </dialog>
-      <form
-        action="/search"
-        autocomplete="off"
-        method="get"
-        role="search"
-      ></form>
-      <div class="searchbox">
-        <div class="insearchbox">
-          <div class="flexsrchbx">
-            <div class="srchbttn">
-              <span class="mrgn disp">
-                <!-- <svg
-                  focusable="false"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewbox="0 0 24 24"
-                >
-                  <path
-                    d="M 15.5 14 h -0.79 l -0.28 -0.27 A 6.471 6.471 0 0 0 16 9.5 A 6.5 6.5 0 1 0 9.5 16 c 1.61 0 3.09 -0.59 4.23 -1.57 l 0.27 0.28 v 0.79 l 5 4.99 L 20.49 19 l -4.99 -5 Z m -6 0 C 7.01 14 5 11.99 5 9.5 S 7.01 5 9.5 5 S 14 7.01 14 9.5 S 11.99 14 9.5 14 Z"
-                  ></path>
-                </svg> -->
-              </span>
-            </div>
-          </div>
-          <div class="srchspce">
-            <div class="txtbox">
-              <textarea
-                class="txtarea"
-                maxlength="2048"
-                name="q"
-                rows="1"
-                aria-activedescendant
-                aria-autocomplete="both"
-                aria-controls="Alh6id"
-                aria-expanded="flase"
-                aria-haspopup="both"
-                aria-owns="Alh6id"
-                autocapitalize="off"
-                autocomplete="off"
-                autocorrect="off"
-                autofocus
-                role="combobox"
-                spellcheck="false"
-                title="Search"
-                type="search"
-                value
-                aria-label="Search"
-                data-ved="0ahUKEwikjP6qmu2AAxV9XEEAHRH0BaYQ39UDCAQ"
-              ></textarea>
-            </div>
-            <div class="micimg">
-              <div class="micbox">
-                <div
-                  class="micbox2"
-                  tabindex="0"
-                  aria-label="Clear"
-                  role="button"
-                  data-ved="0ahUKEwikjP6qmu2AAxV9XEEAHRH0BaYQ05YFCAU"
-                >
-                  <span class="micbxftr micbxftr2">
-                    <svg
-                      focusable="false"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewbox="0 0 24 24"
-                    >
-                      <path
-                        d="M 19 6.41 L 17.59 5 L 12 10.59 L 6.41 5 L 5 6.41 L 10.59 12 L 5 17.59 L 6.41 19 L 12 13.41 L 17.59 19 L 19 17.59 L 13.41 12 Z"
-                      ></path>
-                    </svg>
-                  </span>
+    <div class="page">
+      <div class="top-container">
+        <div class="top-cb">
+          <div class="rht-box">
+            <div>
+              <div class="menu1">
+                <div class="gml-box">
+                  <a
+                    class="gml"
+                    aria-label="Gmail(opens a new tab)"
+                    href="https://mail.google.com/mail?authuser=0&ogbl"
+                    >Gmail</a
+                  >
                 </div>
-                <span class="micbdr"></span>
+                <div class="img-box">
+                  <a
+                    class="img"
+                    aria-label="Search for Images(opens a new tab)"
+                    href="https://www.google.com/imghp?hl=en&authuser=0&gbl"
+                    >Images</a
+                  >
+                </div>
               </div>
-              <div
-                class="micspc"
-                aria-label="Search by voice"
-                role="button"
-                tabindex="0"
-                data-ved="0ahUKEwikjP6qmu2AAxV9XEEAHRH0BaYQvs8DCAY"
-              >
-                <svg
-                  class="mic"
-                  focusable="false"
-                  viewbox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill="#4285f4"
-                    d="m 12 15 c 1.66 0 3 -1.31 3 -2.97 v -7.02 c 0 -1.66 -1.34 -3.01 -3 -3.01 s -3 1.34 -3 3.01 v 7.02 c 0 1.66 1.34 2.97 3 2.97 Z"
-                  ></path>
-                  <path fill="#34a853" d="m11 18.08h2v3.92h-2z"></path>
-                  <path
-                    fill="#fbbc04"
-                    d="m 7.05 16.87 c -1.27 -1.33 -2.05 -2.83 -2.05 -4.87 h 2 c 0 1.45 0.56 2.42 1.47 3.38 v 0.32 l -1.15 1.18 Z"
-                  ></path>
-                  <path
-                    fill="#ea4335"
-                    d="m 12 16.93 a 4.97 5.25 0 0 1 -3.54 -1.55 l -1.41 1.49 c 1.26 1.34 3.02 2.13 4.95 2.13 c 3.87 0 6.99 -2.92 6.99 -7 h -1.99 c 0 2.92 -2.24 4.93 -5 4.93 Z"
-                  ></path>
-                </svg>
+            </div>
+            <div class="menu2">
+              <div class="gglapps-box">
+                <div class="gglapps-spc1">
+                  <div class="gglapps-spc2">
+                    <a
+                      class="gglapps"
+                      aria-label="Google apps"
+                      href="https://www.google.com.ng/intl/en/about/products"
+                      aria-expanded="false"
+                      role="button"
+                      tabindex="0"
+                      ><i class="material-icons">view_module</i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="eml-box">
+                <div class="eml-spc">
+                  <a
+                    class="eml"
+                    aria-label="Google Account: Precious Inioluwa (preciousinioluwa9@gmail.com)"
+                    href="https://accounts.google.com/SignOutOptions?hl=en&continue=https://www.google.com/&ecGBRAmgQ"
+                    role="button"
+                    tabindex="0"
+                    ><i class="material-icons">person</i></a
+                  >
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <div class="scnd-con">
+        <div class="ggl-nm">Google</div>
       </div>
     </div>
   </body>
