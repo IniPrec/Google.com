@@ -383,6 +383,49 @@ button {
   margin: 3px;
   color: #9aa0a6;
 }
+textarea {
+  outline: 1px solid #cc5400 !important;
+}
+.txt-box {
+  display: var(--display);
+  flex-wrap: wrap;
+  flex: 1;
+  margin-top: 6px;
+}
+.txt-boxln {
+  visibility: hidden;
+  color: transparent;
+  white-space: pre;
+  position: absolute;
+  pointer-events: none;
+}
+textarea.txtarea,
+.txt-boxln {
+  font-family: var(--font2);
+  line-height: 22px;
+  margin-bottom: 8px;
+  overflow-x: hidden;
+}
+.txtarea {
+  resize: none;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  color: #e8eaed;
+  word-wrap: break-word;
+  outline: none;
+  display: flex;
+}
+.txtarea,
+.txt-boxln {
+  font-size: 16px;
+  flex: 100%;
+}
+textarea.txtarea {
+  white-space: pre-line;
+  overflow-y: auto;
+}
 div {
   color: var(--textcolor);
   display: block;
