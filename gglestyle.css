@@ -15,6 +15,7 @@
   --boxsize: border-box;
   --height: 48px;
   --padding: 15px;
+  --position: relative;
 }
 body {
   background-color: var(--bgcolor);
@@ -87,7 +88,7 @@ button {
 }
 .menu2 {
   float: right;
-  position: relative;
+  position: var(--position);
   justify-content: flex-end;
 }
 .gglapps-box {
@@ -101,7 +102,7 @@ button {
   line-height: normal;
 }
 .gglapps-spc2 {
-  position: relative;
+  position: var(--position);
   line-height: normal;
 }
 .gglapps {
@@ -123,7 +124,7 @@ button {
   vertical-align: middle;
 }
 .eml-spc {
-  position: relative;
+  position: var(--position);
 }
 .eml {
   text-decoration: none;
@@ -143,8 +144,166 @@ button {
   height: 100%;
   margin-top: 15px;
   font-size: var(--size1);
-  position: relative;
+  position: var(--position);
 }
+.thrd-con {
+  padding: 20px;
+  flex-shrink: 0;
+  box-sizing: var(--boxsize);
+  max-height: 160px;
+}
+.spch-dlg {
+  background: transparent;
+  border: none;
+  display: none;
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  color: canvastext;
+  margin: auto;
+  padding: 1cm;
+  inset-inline-start: 0px;
+  inset-inline-end: 0px;
+}
+.spch {
+  background: var(--bgcolor);
+  display: none;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  overflow: hidden;
+  position: fixed;
+  text-align: left;
+  top: 0;
+  visibility: hidden;
+  width: 100%;
+  transition: visibility 0s linear 0.218s, background-color 0.218s;
+}
+.close-button {
+  background: none;
+  border: none;
+  color: #9aa0a6;
+  cursor: pointer;
+  font-size: 26px;
+  right: 0;
+  line-height: 15px;
+  opacity: 0.6;
+  margin: -1px -1px 0 0;
+  padding: 0 0 2px 0;
+  height: 48px;
+  width: 48px;
+  position: absolute;
+  top: 0;
+}
+.spchc {
+  height: 42px;
+  pointer-events: none;
+  margin: 312px auto auto auto;
+  position: var(--position);
+  top: 0;
+  max-width: 572px;
+  min-width: 534px;
+  padding: 0px 223px;
+}
+.inner-container {
+  height: 100%;
+  opacity: 0.1;
+  pointer-events: none;
+  width: 100%;
+  transition: opacity 0.318s ease-in;
+}
+.button-container {
+  pointer-events: none;
+  position: var(--position);
+  transform: scale(0.1);
+  height: 165px;
+  width: 165px;
+  right: -70px;
+  top: -70px;
+  float: right;
+}
+.spchl {
+  background-color: #dadce0;
+  border-radius: 100%;
+  display: inline-block;
+  opacity: 1;
+  pointer-events: none;
+  position: absolute;
+  transform: scale(0.01);
+  transition: opacity 0.218s;
+  height: 301px;
+  left: -69px;
+  top: -69px;
+  width: 301px;
+}
+.spchb {
+  background-color: #fff;
+  border: 1px solid #f8f9fa;
+  border-radius: 100%;
+  bottom: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: inline-block;
+  pointer-events: none;
+  right: 0;
+  transition: background-color 0.218s, border 0.218s, box-shadow 0.218s;
+  transition-delay: 0;
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  top: 0;
+}
+.mic {
+  height: 87px;
+  pointer-events: none;
+  position: absolute;
+  width: 42px;
+  top: 47px;
+  transform: scale(1);
+  left: 43px;
+}
+.rec {
+  background-color: #999;
+  border-radius: 30px;
+  height: 46px;
+  left: 25px;
+  pointer-events: none;
+  position: absolute;
+  width: 24px;
+}
+.wrapper {
+  bottom: 0;
+  height: 53px;
+  left: 11px;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  width: 52px;
+}
+.stem {
+  background-color: #999;
+  bottom: 14px;
+  height: 14px;
+  left: 22px;
+  pointer-events: none;
+  position: absolute;
+  width: 9px;
+}
+.shell {
+  border: 7px solid #999;
+  border-radius: 28px;
+  bottom: 27px;
+  height: 57px;
+  pointer-events: none;
+  position: absolute;
+  width: 38px;
+  left: 0px;
+}
+.text-container {
+  pointer-events: none;
+  position: absolute;
+}
+
 div {
   color: var(--textcolor);
   display: block;
