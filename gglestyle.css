@@ -526,6 +526,43 @@ a {
   text-decoration: none;
   color: #5b80bd;
 }
+.ffth-con {
+  background: rgb(22, 22, 22);
+  flex-shrink: 0;
+  box-sizing: var(--boxsize);
+}
+.cntr {
+  padding: 15px 30px;
+  border-bottom: 1px solid #393d41;
+  font-size: var(--size3);
+  color: #999da1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.sttg-box {
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0 20px;
+}
+.abt-box {
+  justify-content: flex-start;
+  min-width: 30%;
+  order: 1;
+}
+a {
+  color: grey;
+  text-decoration: none;
+}
+.abt,
+.advt,
+.bus,
+.hsw {
+  display: block;
+  padding: 15px;
+  white-space: nowrap;
+}
 div {
   color: var(--textcolor);
   display: block;
