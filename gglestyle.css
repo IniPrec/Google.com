@@ -543,25 +543,63 @@ a {
 .sttg-box {
   justify-content: space-evenly;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   padding: 0 20px;
 }
 .abt-box {
   justify-content: flex-start;
   min-width: 30%;
   order: 1;
+  display: var(--display);
+  flex-wrap: wrap;
 }
 a {
   color: grey;
   text-decoration: none;
 }
+a:hover {
+  text-decoration: underline;
+  color: #5b80bd;
+}
 .abt,
 .advt,
 .bus,
-.hsw {
+.hsw,
+.dcde,
+.priv,
+.trm,
+.sttg {
   display: block;
   padding: 15px;
   white-space: nowrap;
+}
+.dcde-box {
+  order: 0;
+  width: 100%;
+  justify-content: center;
+  display: var(--display);
+  flex-wrap: wrap;
+}
+.lfimg {
+  height: 14px;
+  margin-right: 6px;
+  white-space: nowrap;
+  vertical-align: top;
+}
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+.lst-box {
+  justify-content: flex-end;
+  min-width: 30%;
+  order: 3;
+  display: var(--display);
+  flex-wrap: wrap;
+}
+.stg-bx {
+  cursor: pointer;
+  display: inline-block;
 }
 div {
   color: var(--textcolor);
