@@ -486,6 +486,46 @@ textarea.txtarea {
   width: 24px;
   height: 44px;
 }
+.optbttn-box {
+  height: 70px;
+  padding-top: 18px;
+}
+input[type="submit"] {
+  background-color: #303134;
+  border: 1px solid #303134;
+  border-radius: 4px;
+  color: #e8eaed;
+  font-family: var(--font2);
+  font-size: var(--size3);
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+.frth-con {
+  flex-grow: 1;
+  flex-shrink: 0;
+  box-sizing: var(--boxsize);
+  height: 153px;
+}
+.ggl-langbx {
+  font-size: small;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.ggl-lang {
+  color: #bdc1c6;
+  display: inline-block;
+  line-height: 28px;
+}
+a {
+  text-decoration: none;
+  color: #5b80bd;
+}
 div {
   color: var(--textcolor);
   display: block;
