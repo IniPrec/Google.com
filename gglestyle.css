@@ -1,16 +1,47 @@
 .about {
-  color: gray;
-  gap: 4rem;
-  padding: 5rem;
+  color: grey;
+  display: flex;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  gap: 1rem;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+body{
+  background-color: #202124;
+}
+
+button{
+  background-color: #333438;
+  border-radius: 0.2rem;
+  color: aliceblue;
+  height: 2rem;
+  width: 8rem;
+}
+
+.country {
+  color: darkgray;
+  display: flex;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1rem;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0.5rem;
 }
 
 .featureButtons {
   margin: 1rem auto;
   width: max-content;
+  padding: 4rem auto;
+}
+
+.footer{
+  margin: 12rem 0rem auto;
+
 }
 
 .h1 {
-  color: gray;
+  color: aliceblue;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 5rem;
   margin: 1rem auto;
@@ -22,6 +53,14 @@
   transition: all 0.1s ease;
 }
 
+.join {
+  color: grey;
+  display: flex;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
 .languages {
   color: gray;
   display: flex;
@@ -30,13 +69,13 @@
 
 .navBar {
   display: flex;
-  justify-content: right;
   gap: 1rem;
+  justify-content: right;
   padding: 1rem 1rem;
 }
 
 .navLink {
-  color: black;
+  color: aliceblue;
   text-decoration: none;
 }
 
@@ -45,6 +84,7 @@
 }
 
 .offer {
+  color: aliceblue;
   display: flex;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0 auto;
@@ -52,8 +92,13 @@
 }
 
 #search {
+  background: transparent;
   border: none;
+  color: aliceblue;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1rem;
   padding: 0.5rem;
+  width: 25rem;
 }
 
 #search:focus {
@@ -68,13 +113,25 @@
   gap: 1rem;
   justify-content: center;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0.5rem;
   width: max-content;
+  border-color: grey;
 }
 
-.settingsContainer1 {
+
+.settingsContainer{
   display: flex;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  margin: 0 auto;
-  width: max-content;
+}
+
+.setting{
+  color: grey;
+  display: flex;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  gap: 1rem;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.srch, .srch-mic, .srch-cam{
+  color: aliceblue;
 }
