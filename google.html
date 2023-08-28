@@ -11,253 +11,63 @@
     />
   </head>
   <body>
-    <div class="page">
-      <div class="top-container">
-        <div class="top-cb">
-          <div class="rht-box">
-            <div>
-              <div class="menu1">
-                <div class="gml-box">
-                  <a
-                    class="gml"
-                    aria-label="Gmail(opens a new tab)"
-                    href="https://mail.google.com/mail?authuser=0&ogbl"
-                    >Gmail</a
-                  >
-                </div>
-                <div class="img-box">
-                  <a
-                    class="img"
-                    aria-label="Search for Images(opens a new tab)"
-                    href="https://www.google.com/imghp?hl=en&authuser=0&gbl"
-                    >Images</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="menu2">
-              <div class="gglapps-box">
-                <div class="gglapps-spc1">
-                  <div class="gglapps-spc2">
-                    <a
-                      class="gglapps"
-                      aria-label="Google apps"
-                      href="https://www.google.com.ng/intl/en/about/products"
-                      aria-expanded="false"
-                      role="button"
-                      tabindex="0"
-                      ><i class="material-icons">view_module</i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="eml-box">
-                <div class="eml-spc">
-                  <a
-                    class="eml"
-                    aria-label="Google Account: Precious Inioluwa (preciousinioluwa9@gmail.com)"
-                    href="https://accounts.google.com/SignOutOptions?hl=en&continue=https://www.google.com/&ecGBRAmgQ"
-                    role="button"
-                    tabindex="0"
-                    ><i class="material-icons">person</i></a
-                  >
-                </div>
-              </div>
-            </div>
+    <header class="header">
+      <nav class="navBar">
+        <a class="navLink" href="">Gmail</a>
+        <a class="navLink" href="">Images</a>
+        <a class="navLink" href="">Account</a>
+      </nav>
+    </header>
+    <main>
+      <h1 class="h1">Google</h1>
+      <div>
+        <div class="searchContainer">
+          <div>
+            <span class="srch">
+              <i class="material-icons">search</i>
+            </span>
+          </div>
+          <div class="inputContainer"><input type="search" name="search" id="search" /></div>
+          <div
+            class="srch-mic"
+            aria-label="Search by voice"
+            role="button"
+            tabindex="0"
+          >
+            <i class="material-icons">mic</i>
+          </div>
+          <div
+            class="srch-cam"
+            aria-label="Search by image"
+            role="button"
+            tabindex="0"
+          >
+            <i class="material-icons">camera_alt</i>
+          </div>
+        </div>
+        <div class=" featureButtons">
+          <button>Google Search</button>
+          <button>I am feeling lucky</button>
+        </div>
+        <div class="offer">
+          <span>Google offered in:</span>
+          <div class="languages">
+            <span>Hausa</span><span>Igbo</span><span>Yoruba</span
+            ><span>Nigerian Pidgin</span>
           </div>
         </div>
       </div>
-      <div class="scnd-con">
-        <div class="ggl-nm">Google</div>
-      </div>
-      <div class="thrd-con">
-        <dialog class="spch-dlg">
-          <div class="spch">
-            <button class="close-button" aria-label="close">x</button>
-            <div class="spchc">
-              <div class="inner-container">
-                <div class="button-container">
-                  <span class="spchl"></span>
-                  <span class="spchb">
-                    <div class="mic">
-                      <span class="rec"></span>
-                      <div class="wrapper">
-                        <span class="stem"></span>
-                        <span class="shell"></span>
-                      </div>
-                    </div>
-                  </span>
-                </div>
-                <div class="text-container">
-                  <span class="spcht" style="color: #9aa0a6"></span>
-                  <span class="spcht" style="color: #bdc1c6"></span>
-                </div>
-                <div class="ggl-logo"></div>
-              </div>
-              <div class="pmsn-br">
-                <div class="pmsn-br-gr"></div>
-              </div>
-            </div>
-          </div>
-        </dialog>
-        <div class="srch-box">
-          <div class="srchtxt-box">
-            <div class="srchspc">
-              <div class="srchspc-spc">
-                <span class="srch">
-                  <i class="material-icons">search</i>
-                </span>
-              </div>
-            </div>
-            <div class="txt-box">
-              <div class="txt-boxln">
-                <textarea
-                  class="txtarea"
-                  name="q"
-                  rows="1"
-                  aria-activedescendant
-                  aria-autocomplete="both"
-                  aria-controls="Alh6id"
-                  maxlenght="2048"
-                  aria-expanded="false"
-                  aria-haspopup="both"
-                  aria-owns="Alh6id"
-                  autocapitalize="off"
-                  autocomplete="off"
-                  autocorrect="off"
-                  autofocus
-                  role="combobox"
-                  spellcheck="false"
-                  title="Search"
-                  type="search"
-                  value
-                  aria-label="Search"
-                ></textarea>
-              </div>
-              <div class="srch-menu">
-                <div class="srch-menuln">
-                  <div class="srch-menubg"></div>
-                  <div
-                    class="srch-mic"
-                    aria-label="Search by voice"
-                    role="button"
-                    tabindex="0"
-                  >
-                    <i class="material-icons">mic</i>
-                  </div>
-                  <div
-                    class="srch-cam"
-                    aria-label="Search by image"
-                    role="button"
-                    tabindex="0"
-                  >
-                    <i class="material-icons">camera_alt</i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="optbttn-box">
-          <center>
-            <input
-              class="ggle-srch"
-              value="Google Search"
-              aria-label="Google Search"
-              role="button"
-              tabindex="0"
-              type="submit"
-            />
-            <input
-              class="imfl"
-              value="I'm Feeling Lucky"
-              aria-label="I'm Feeling Lucky"
-              type="submit"
-            />
-          </center>
+    </main>
+    <footer>
+      <div class="settingsContainer1">
+        <div class="about">
+          <span>About</span><span>Advertising</span><span>Business</span><span>How Search Works</span>
         </div>
       </div>
-      <div class="frth-con">
-        <div class="ggl-langbx">
-          <div class="ggl-lang">
-            Google offered in:
-            <a
-              href="https://www.google.com/setprefs?sig=0 CQbzoL80qjDGeNiadK0cbzsR-vc%3D&hl=ha&source=homepage&sa=X&ved=0ahUKEwj 2MHs4fSAAxWeWkEAHZkXBmsQ2ZgBCBE"
-              >Hausa</a
-            >
-            <a
-              href="https://www.google.com/setprefs?sig=0 CQbzoL80qjDGeNiadK0cbzsR-vc%3D&hl=ha&source=homepage&sa=X&ved=0ahUKEwj 2MHs4fSAAxWeWkEAHZkXBmsQ2ZgBCBI"
-              >Igbo</a
-            >
-            <a
-              href="https://www.google.com/setprefs?sig=0 CQbzoL80qjDGeNiadK0cbzsR-vc%3D&hl=ha&source=homepage&sa=X&ved=0ahUKEwj 2MHs4fSAAxWeWkEAHZkXBmsQ2ZgBCBM"
-              >Ede Yoruba</a
-            >
-            <a
-              href="https://www.google.com/setprefs?sig=0 CQbzoL80qjDGeNiadK0cbzsR-vc%3D&hl=ha&source=homepage&sa=X&ved=0ahUKEwj 2MHs4fSAAxWeWkEAHZkXBmsQ2ZgBCBQ"
-              >Nigerian Pidgin</a
-            >
-          </div>
-        </div>
+      <div class="settingsContainer2">
+        <div class="settings">
+          <span>@2023</span><span>Privacy</span><span>Terms</span></div>
       </div>
-      <div class="ffth-con">
-        <div class="cntr">Nigeria</div>
-        <div class="sttg-box">
-          <div class="abt-box">
-            <a
-              class="abt"
-              href="https://about.google/?utm_source=google-NG&utm_medium=referral&utm_campaign=hp-footer&fg=1"
-              >About</a
-            >
-            <a
-              class="advt"
-              href="https://ads.google.com/intl/en_ng/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1"
-              >Advertising</a
-            >
-            <a
-              class="bus"
-              href="https://smallbusiness.withgoogle.com/intl/en-ssa/?subid=ng_en-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=ng-en_GB-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u"
-              >Business</a
-            >
-            <a
-              class="hsw"
-              href="https://www.google.com/search/howsearchworks/?fg=1"
-              >How Search Works</a
-            >
-          </div>
-          <div class="dcde-box">
-            <a
-              class="dcde"
-              href="https://sustainability.google/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content="
-              ><img
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC"
-                class="lfimg"
-              />Our Third decade of climate action: join us</a
-            >
-          </div>
-          <div class="lst-box">
-            <a
-              class="priv"
-              href="https://policies.google.com/privacy?hl=en-NG&fg=1"
-              >Privacy</a
-            >
-            <a
-              class="trm"
-              href="https://policies.google.com/terms?hl=en-NG&fg=1"
-              >Terms</a
-            >
-            <div
-              class="stg-bx"
-              aria-expanded="false"
-              aria-haspopup="true"
-              role="button"
-              tabindex="0"
-            >
-              <div class="sttg" aria-haspopup="true">Settings</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    </footer>
   </body>
 </html>
